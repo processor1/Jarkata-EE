@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Register New Person</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+        <script type="text/javascript" src="js/bootstrap.js"></script>
+        <style type="text/css">
+            #reset,#sub{
+                margin:5px;
+
+            }
+        </style>
+    </head>
+    <body>
+        <div class="jumbotron">
+            <h2>Add New Person</h2>
+            <form action="http://localhost:8080/App1/PersonController" method="POST">
+                <fieldset>
+                    <label for="fname">First Name</label>
+                    <input  type="text" class="form-control" name="fname" placeholder="First Name" required>
+                    <!-- //-->
+                    <label for="fname">Last Name</label>
+                    <input  type="text" class="form-control" name="lname" placeholder="Last Name" required>
+                    <!-- //-->
+                    <label for="email">Email Address</label>
+                    <input  type="email" class="form-control" name="email" placeholder="Email Address" required>
+                    <!-- //-->
+                    <label for="password">Password</label>
+                    <input  type="password" class="form-control " name="password" placeholder="Password" required>
+                    <!-- //-->
+                    <label for="date">Date</label>
+                    <input  type="date" class="form-control" name="date" placeholder="Date" required>
+                    <input type="submit" id="sub" class="btn btn-primary" value="Add Person"><input type="reset" id="reset" class="btn btn-danger" value="Clear">
+                </fieldset>
+
+            </form>
+        </div>
+    </body>
+</html>
